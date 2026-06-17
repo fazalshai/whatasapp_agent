@@ -28,30 +28,38 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Custom Scrollbar for inner panel scrolling */
+.custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
 }
-
-/* Scrollbar Customization */
-::-webkit-scrollbar {
-  width: 8px;
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
 }
-::-webkit-scrollbar-track {
+.custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
-::-webkit-scrollbar-thumb {
+.custom-scrollbar::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.15);
-  border-radius: 4px;
+  border-radius: 3px;
 }
-::-webkit-scrollbar-thumb:hover {
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+html, body {
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-dark);
   color: var(--text-primary);
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -380,7 +380,7 @@ export const InteractivePlayground: React.FC = () => {
                 </div>
 
                 {/* Message Log */}
-                <div style={{
+                <div className="custom-scrollbar" style={{
                   flex: 1,
                   padding: '15px',
                   overflowY: 'auto',
@@ -601,7 +601,7 @@ export const InteractivePlayground: React.FC = () => {
                   </div>
 
                   {/* Scrolling Call Transcripts */}
-                  <div style={{
+                  <div className="custom-scrollbar" style={{
                     width: '100%',
                     height: '140px',
                     background: 'rgba(255, 255, 255, 0.03)',
